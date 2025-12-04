@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artvice Lab | Próteses Protocolo de Alta Precisão</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://api.fontshare.com/v2/css?f[]=switzer@300,400,500,600,700,800,900&f[]=satoshi@300,400,500,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              // Switzer: Title/Heading - 2% tracking, 110% line height
+              heading: ['Switzer', 'sans-serif'],
+              display: ['Switzer', 'sans-serif'],
+              
+              // Maison Neue: Body/UI - 1% tracking, 150% line height
+              body: ['"Maison Neue"', 'Inter', 'sans-serif'],
+              sans: ['"Maison Neue"', 'Inter', 'sans-serif'],
+
+              // Satoshi: Complement/H3 - 1% tracking
+              complement: ['Satoshi', 'sans-serif'],
+            },
+            letterSpacing: {
+              'heading': '-0.02em', // -2%
+              'body': '-0.01em',    // -1%
+            },
+            lineHeight: {
+              'heading': '1.1',     // 110%
+              'body': '1.5',        // 150%
+            },
+            colors: {
+              // Palette Update
+              background: '#070A0E',
+              surface: '#0F141A', 
+              stroke: '#1F2933',
+              white: '#f7f7f7', // Overriding default white for consistency
+              'accent-blue': '#89B0D2',
+              'accent-teal': '#89D2BD',
+            },
+            animation: {
+              'float-slow': 'float 8s ease-in-out infinite',
+              'float-medium': 'float 6s ease-in-out infinite',
+              'pulse-glow': 'pulseGlow 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            },
+            keyframes: {
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-20px)' },
+              },
+              pulseGlow: {
+                '0%, 100%': { opacity: 0.5 },
+                '50%': { opacity: 1 },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #070A0E;
+        color: #f7f7f7;
+        font-family: 'Maison Neue', 'Inter', sans-serif;
+        letter-spacing: -0.01em;
+        line-height: 1.5;
+        overflow-x: hidden;
+      }
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #070A0E;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #1F2933;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #89B0D2;
+      }
+      
+      h1, h2, h3, h4, h5, h6 {
+        font-family: 'Switzer', sans-serif;
+        letter-spacing: -0.02em;
+        line-height: 1.1;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.25",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
